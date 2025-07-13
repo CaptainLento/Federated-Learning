@@ -66,35 +66,30 @@ Durante l'esecuzione, potrai osservare nei log:
 * Le metriche di training (train_loss) inviate dai singoli client.  
 * L'andamento della Centralized_accuracy e della distributed_accuracy nel corso dei round.  
 
-Risultati Chiave della Simulazione
-La simulazione è stata configurata per 30 round di comunicazione e addestramento, con una strategia di learning rate dinamica.
+### Risultati Chiave della Simulazione:
+La simulazione è stata configurata per 30 round di comunicazione e addestramento, con una strategia di learning rate dinamica.  
+* Accuratezza Iniziale: Il modello non addestrato ha mostrato un'accuratezza centralizzata del 0.0%.  
+* Accuratezza Finale: Al termine dei 30 round, il modello globale ha raggiunto un'accuratezza centralizzata di circa 84.38% sul set di test del server.  
+* L'accuratezza aggregata dalle valutazioni distribuite sui client è stata di circa 82.94%.  
 
-Accuratezza Iniziale: Il modello non addestrato ha mostrato un'accuratezza centralizzata del 0.0%.
+### Convergenza della Loss e durata del processo: 
+La perdita centralizzata è scesa da 2.347 a circa 1.273, mentre la perdita distribuita ha mostrato un andamento simile, convergendo.  
+Durata Totale: L'intera simulazione si è completata in circa 392.92 secondi.  
+Questi risultati dimostrano la capacità del sistema di apprendere efficacemente da dati distribuiti, migliorando notevolmente le prestazioni del modello iniziale.  
 
-Accuratezza Finale: Al termine dei 30 round, il modello globale ha raggiunto un'accuratezza centralizzata di circa 84.38% sul set di test del server. L'accuratezza aggregata dalle valutazioni distribuite sui client è stata di circa 82.94%.
+### Considerazioni Aggiuntive:  
+È importante ribadire che questo algoritmo di apprendimento federato è concepito come un ausilio decisionale per i professionisti medici, non come un sostituto della diagnosi umana. La responsabilità finale e l'interpretazione clinica rimangono sempre di competenza del medico.  
+Inoltre, si prevede che l'utilizzo di un set di dati maggiore e più diversificato possa portare a un ulteriore miglioramento delle performance del modello, sia in termini di accuratezza che di capacità di generalizzazione, mitigando l'impatto della frammentazione dei dati in un ambiente federato.  
 
-Convergenza della Loss: La perdita centralizzata è scesa da 2.347 a circa 1.273, mentre la perdita distribuita ha mostrato un andamento simile, convergendo.
-
-Durata Totale: L'intera simulazione si è completata in circa 392.92 secondi.
-
-Questi risultati dimostrano la capacità del sistema di apprendere efficacemente da dati distribuiti, migliorando notevolmente le prestazioni del modello iniziale.
-
-Considerazioni Aggiuntive
-È importante ribadire che questo algoritmo di apprendimento federato è concepito come un ausilio decisionale per i professionisti medici, non come un sostituto della diagnosi umana. La responsabilità finale e l'interpretazione clinica rimangono sempre di competenza del medico.
-
-Inoltre, si prevede che l'utilizzo di un set di dati maggiore e più diversificato possa portare a un ulteriore miglioramento delle performance del modello, sia in termini di accuratezza che di capacità di generalizzazione, mitigando l'impatto della frammentazione dei dati in un ambiente federato.
-
-Licenza
+### Licenza
 Questo progetto è distribuito sotto licenza Apache-2.0. Per maggiori dettagli, consulta il file di licenza presente nel repository.
 
-Riconoscimenti
-Ringraziamenti a:
-
-Il team di Flower per l'eccellente framework di apprendimento federato.
-
-Il team di PyTorch per la libreria di deep learning.
-
-I creatori del dataset Falah/Alzheimer_MRI per aver reso disponibili i dati.
+### Riconoscimenti
+Ringraziamenti a:  
+* Al Relatore e al Correlatore per la preziosa guida e il costante supporto durante questo percorso di tesi
+* Il team di Flower per l'eccellente framework di apprendimento federato.
+* Il team di PyTorch per la libreria di deep learning.
+* I creatori del dataset Falah/Alzheimer_MRI per aver reso disponibili i dati.
 
 
 
