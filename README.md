@@ -93,3 +93,5 @@ Questo progetto è distribuito sotto licenza Apache-2.0. Per maggiori dettagli, 
 Ringraziamenti a:  
 * Al Relatore e al Correlatore per la preziosa guida e il costante supporto durante questo percorso di tesi
 * Il team di Flower per l'eccellente framework di apprendimento federato.
+* Il team di PyTorch per la libreria di deep learning.
+* I creatori del dataset Falah/Alzheimer_MRI per aver reso disponibili i dati.
