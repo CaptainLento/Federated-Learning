@@ -1,13 +1,9 @@
 # Progetto di Tesi: Apprendimento Federato per l'Analisi di Immagini Mediche (Alzheimer MRI)
-
 ## Introduzione
-
 Questo repository contiene il codice sorgente del progetto di tesi incentrato sull'implementazione di un sistema di Apprendimento Federato (Federated Learning - FL) per l'analisi di immagini di Risonanza Magnetica (MRI) cerebrale, con l'obiettivo di supportare la diagnosi di condizioni legate all'Alzheimer. Il progetto sfrutta il framework [Flower](https://flower.ai/) per orchestrare il processo di addestramento distribuito e [PyTorch](https://pytorch.org/) per la costruzione e l'addestramento del modello di deep learning.
-
 L'apprendimento federato consente di addestrare un modello globale su dati distribuiti su più client (es. ospedali, centri di ricerca) senza che i dati sensibili lascino mai la loro posizione originale, garantendo così privacy e conformità normativa.
 
 ## Caratteristiche Principali
-
 * **Apprendimento Federato:** Implementazione basata su Flower per l'addestramento di modelli su dati decentralizzati.
 * **Modello CNN:** Utilizzo di una Rete Neurale Convoluzionale (CNN) sviluppata in PyTorch per la classificazione delle immagini MRI.
 * **Dataset Medicale:** Addestramento e valutazione su un dataset di immagini MRI del cervello (`Falah/Alzheimer_MRI`).
@@ -17,12 +13,12 @@ L'apprendimento federato consente di addestrare un modello globale su dati distr
 
 Il progetto è organizzato come segue:
 
-├── client_app.py           # Implementazione del client Flower: gestisce l'addestramento e la valutazione locale.
-├── server_app.py           # Implementazione del server Flower: orchestra i round di comunicazione e aggrega i modelli.
-├── task.py                 # Definisce l'architettura della CNN (Net), le funzioni di training/testing e caricamento dati.
-├── pyproject.toml          # File di configurazione del progetto e delle dipendenze.
-├── README.md               # Questo file.
-└── venv/                   # Ambiente virtuale (se creato localmente).
+├── client_app.py           # Implementazione del client Flower: gestisce l'addestramento e la valutazione locale.  
+├── server_app.py           # Implementazione del server Flower: orchestra i round di comunicazione e aggrega i modelli.  
+├── task.py                 # Definisce l'architettura della CNN (Net), le funzioni di training/testing e caricamento dati.  
+├── pyproject.toml          # File di configurazione del progetto e delle dipendenze.  
+├── README.md               # Questo file.  
+└── venv/                   # Ambiente virtuale (se creato localmente).  
 
 ## Dataset
 
