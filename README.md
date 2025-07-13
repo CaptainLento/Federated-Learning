@@ -5,23 +5,23 @@ Questo repository contiene il codice sorgente del progetto di tesi incentrato su
 Il progetto sfrutta il framework Flower 🌸 per orchestrare il processo di addestramento distribuito e PyTorch 🔥 per la costruzione e l'addestramento del modello di deep learning.  
 L'apprendimento federato consente di addestrare un modello globale su dati distribuiti su più client (es. ospedali, centri di ricerca) senza che i dati sensibili lascino mai la loro posizione originale, garantendo così privacy 🔒 e conformità normativa.  
 
-## Caratteristiche Principali
+## ✨ Caratteristiche Principali
 * **Apprendimento Federato:** Implementazione basata su Flower per l'addestramento di modelli su dati decentralizzati.
 * **Modello CNN:** Utilizzo di una Rete Neurale Convoluzionale (CNN) sviluppata in PyTorch per la classificazione delle immagini MRI.
 * **Dataset Medicale:** Addestramento e valutazione su un dataset di immagini MRI del cervello (`Falah/Alzheimer_MRI`).
 * **Configurazione Flessibile:** Parametri di simulazione configurabili (numero di round, frazione di client, epoche locali, learning rate dinamico).
 
-## Struttura del Progetto
+## 📂 Struttura del Progetto
 
 Il progetto è organizzato come segue:
-
-├── client_app.py           # Implementazione del client Flower: gestisce l'addestramento e la valutazione locale.  
-├── server_app.py           # Implementazione del server Flower: orchestra i round di comunicazione e aggrega i modelli.  
-├── task.py                 # Definisce l'architettura della CNN (Net), le funzioni di training/testing e caricamento dati.  
-├── pyproject.toml          # File di configurazione del progetto e delle dipendenze.  
-├── README.md               # Questo file.  
-└── venv/                   # Ambiente virtuale (se creato localmente).  
-
+```bash
+├── client_app.py           # 👨‍⚕️ Implementazione del client: gestisce l'addestramento e la valutazione locale.
+├── server_app.py           # 💻 Implementazione del server: orchestra i round di comunicazione e aggrega i modelli.
+├── task.py                 # 🧠 Definisce l'architettura della CNN (`Net`), le funzioni di training/testing e caricamento dati.
+├── pyproject.toml          # ⚙️ File di configurazione del progetto e delle dipendenze.
+├── README.md               # 📄 Questo file.
+└── venv/                   # 🌳 Ambiente virtuale (se creato localmente).  
+```
 ## Dataset
 
 Il dataset utilizzato è `Falah/Alzheimer_MRI`, caricato tramite `flwr-datasets`. Questo dataset contiene immagini di risonanza magnetica cerebrale suddivise in diverse categorie (e.g., soggetti sani, diverse fasi dell'Alzheimer).
