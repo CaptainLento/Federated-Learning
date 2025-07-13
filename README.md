@@ -22,29 +22,27 @@ Il progetto è organizzato come segue:
 ├── README.md               # 📄 Questo file.
 └── venv/                   # 🌳 Ambiente virtuale (se creato localmente).  
 ```
-## Dataset
+## 📊 Dataset
 
-Il dataset utilizzato è `Falah/Alzheimer_MRI`, caricato tramite `flwr-datasets`. Questo dataset contiene immagini di risonanza magnetica cerebrale suddivise in diverse categorie (e.g., soggetti sani, diverse fasi dell'Alzheimer).
+Il dataset utilizzato è `Falah/Alzheimer_MRI`. Questo dataset contiene immagini di risonanza magnetica cerebrale suddivise in diverse categorie (e.g., soggetti sani, diverse fasi dell'Alzheimer).  
+**Nota Importante:** La natura distribuita dell'apprendimento federato, con la suddivisione del dataset globale in partizioni per ciascun client, può portare a una quantità relativamente limitata di dati per l'addestramento locale. Ciò nonostante, il sistema è stato progettato per dimostrare l'efficacia del FL anche in contesti di dati frammentati.
 
-**Nota Importante:** La natura distribuita dell'apprendimento federato, con la suddivisione del dataset globale in partizioni per ciascun client, può portare a una quantità relativamente limitata di dati per l'addestramento locale. Ciò nonostante, il sistema è stato progettato per dimostrare l'efficacia dell'FL anche in contesti di dati frammentati.
-
-## Prerequisiti
+## 🛠️ Prerequisiti
 
 Assicurati di avere Python 3.10 o superiore installato sul tuo sistema.
 
-## Installazione
+## 🚀 Installazione
 
 1.  **Clona il repository:**
     ```bash
-    git clone [https://github.com/tuo_username/nome_del_tuo_progetto_tesi.git](https://github.com/tuo_username/nome_del_tuo_progetto_tesi.git)
-    cd nome_del_tuo_progetto_tesi
+    git clone [https://github.com/CaptainLento/Federated-Learning.git](https://github.com/CaptainLento/Federated-Learning.git)
+    cd Federated-Learning
     ```
 
 2.  **Crea e attiva un ambiente virtuale (raccomandato):**
     ```bash
     python -m venv venv
     source venv/bin/activate  # Su Linux/macOS
-    # o
     venv\Scripts\activate     # Su Windows
     ```
 
@@ -54,22 +52,19 @@ Assicurati di avere Python 3.10 o superiore installato sul tuo sistema.
     pip install -e .
     ```
 
-## Utilizzo
+## ▶️ Utilizzo
 
 Per avviare la simulazione di apprendimento federato, esegui il seguente comando dalla radice del progetto:
-
 ```bash
 flwr run .
+```
 
-Il comando flwr run . avvierà il server Flower e spawnerà i client in un ambiente di simulazione locale. La configurazione dei round di training, della frazione di client e delle epoche locali è definita in pyproject.toml (es. 30 round, 3 epoche locali, campionamento del 50% dei client).
-
+Il comando avvierà il server Flower e crea i client in un ambiente di simulazione locale.  
+La configurazione dei round di training, della frazione di client e delle epoche locali è definita in pyproject.toml (es. 30 round, 3 epoche locali, campionamento del 50% dei client).  
 Durante l'esecuzione, potrai osservare nei log:
-
-La perdita (loss) e l'accuratezza del modello globale.
-
-Le metriche di training (train_loss) inviate dai singoli client.
-
-L'andamento della Centralized_accuracy e della distributed_accuracy nel corso dei round.
+* La perdita (loss) e l'accuratezza del modello globale.  
+* Le metriche di training (train_loss) inviate dai singoli client.  
+* L'andamento della Centralized_accuracy e della distributed_accuracy nel corso dei round.  
 
 Risultati Chiave della Simulazione
 La simulazione è stata configurata per 30 round di comunicazione e addestramento, con una strategia di learning rate dinamica.
