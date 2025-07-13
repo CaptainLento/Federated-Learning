@@ -3,6 +3,7 @@ Loading project configuration...
 Success
 /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+
 INFO :      Starting Flower ServerApp, config: num_rounds=30, no round_timeout
 INFO :      
 INFO :      [INIT]
@@ -12,10 +13,6 @@ INFO :      initial parameters (loss, other metrics): 2.3367655694484712, {'Cent
 INFO :      
 INFO :      [ROUND 1]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
-(ClientAppActor pid=13112) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: Falah/Alzheimer_MRI.
-(ClientAppActor pid=13112)   warnings.warn(
-(ClientAppActor pid=13113) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
-(ClientAppActor pid=13113)   obj.co_lnotab,  # for < python 3.10 [not counted in args]
 INFO :      aggregate_fit: received 3 results and 0 failures
 {'client_metrics': '{"train_loss": 3.8368176762014627}'}
 {'client_metrics': '{"train_loss": 3.538941163283128}'}
