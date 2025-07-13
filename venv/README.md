@@ -2,7 +2,7 @@
 My pip list output shows the Python packages installed in your virtual environment.   
 Here's a summary of the key libraries related to data science, machine learning, and federated learning:  
 
-'''Bash
+```Bash
 (venv) cupcake@Adnmin:~/Desktop/Tesi01$ pip list
 
 Package                   Version     Editable project location
@@ -62,7 +62,7 @@ pandas                    2.3.1
 pathspec                  0.12.1
 pillow                    11.3.0
 pip                       25.1.1
-project01                 1.0.0       /home/cupcake/Desktop/Tesi01/project01
+project01                 1.0.0
 propcache                 0.3.2
 protobuf                  4.25.8
 pyarrow                   20.0.0
@@ -95,4 +95,4 @@ tzdata                    2025.2
 urllib3                   2.5.0
 xxhash                    3.5.0
 yarl                      1.20.1
-'''
+```
