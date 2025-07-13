@@ -1,4 +1,4 @@
-# 🧠 Apprendimento Federato per l'Analisi di Immagini Mediche (Alzheimer MRI)
+# 🧠 Federated Learning in Medicine: A paradigm for advancing Healthcare and maintaining data privacy  
 
 ## 🌟 Introduzione 
 Questo repository contiene il codice sorgente del progetto di tesi incentrato sull'implementazione di un sistema di Apprendimento Federato (Federated Learning - FL) per l'analisi di immagini di Risonanza Magnetica (MRI) cerebrale, con l'obiettivo di supportare la diagnosi di condizioni legate all'Alzheimer.  
