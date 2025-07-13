@@ -1,3 +1,4 @@
+(venv) cupcake@Adnmin:~/Desktop/Tesi01$ flwr run project01
 Loading project configuration... 
 Success
 /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
@@ -7,444 +8,434 @@ INFO :
 INFO :      [INIT]
 INFO :      Using initial global parameters provided by strategy
 INFO :      Starting evaluation of initial global parameters
-INFO :      initial parameters (loss, other metrics): 2.3468955636024473, {'Centralized_accuracy': 0.0}
+INFO :      initial parameters (loss, other metrics): 2.3367655694484712, {'Centralized_accuracy': 0.0}
 INFO :      
 INFO :      [ROUND 1]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
-(ClientAppActor pid=11295) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: Falah/Alzheimer_MRI.
-(ClientAppActor pid=11295)   warnings.warn(
-(ClientAppActor pid=11294) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
-(ClientAppActor pid=11294)   obj.co_lnotab,  # for < python 3.10 [not counted in args]
-(ClientAppActor pid=11294) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
-(ClientAppActor pid=11294)   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+(ClientAppActor pid=13112) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: Falah/Alzheimer_MRI.
+(ClientAppActor pid=13112)   warnings.warn(
+(ClientAppActor pid=13113) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+(ClientAppActor pid=13113)   obj.co_lnotab,  # for < python 3.10 [not counted in args]
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 4.35236269980669}'}
-{'client_metrics': '{"train_loss": 3.5842748632033667}'}
-{'client_metrics': '{"train_loss": 3.7082248490590315}'}
-INFO :      fit progress: (1, 1.184280800819397, {'Centralized_accuracy': 0.35859375}, 19.851519531000122)
+{'client_metrics': '{"train_loss": 3.8368176762014627}'}
+{'client_metrics': '{"train_loss": 3.538941163283128}'}
+{'client_metrics': '{"train_loss": 3.2753544335181894}'}
+INFO :      fit progress: (1, 1.128600251674652, {'Centralized_accuracy': 0.4953125}, 19.927560691000053)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 2]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 3.089808686783439}'}
-{'client_metrics': '{"train_loss": 3.0590061197678247}'}
-{'client_metrics': '{"train_loss": 2.8351331765835104}'}
-INFO :      fit progress: (2, 1.005135251581669, {'Centralized_accuracy': 0.5296875}, 32.92585808400054)
+{'client_metrics': '{"train_loss": 2.718826800584793}'}
+{'client_metrics': '{"train_loss": 3.02802658648718}'}
+{'client_metrics': '{"train_loss": 2.5664664621581323}'}
+INFO :      fit progress: (2, 0.9951771169900894, {'Centralized_accuracy': 0.4953125}, 31.2898142250001)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 3]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 2.788890110949675}'}
-{'client_metrics': '{"train_loss": 3.0152496193584644}'}
-{'client_metrics': '{"train_loss": 2.6768695628270507}'}
-INFO :      fit progress: (3, 0.9699386522173882, {'Centralized_accuracy': 0.55}, 44.45247455200024)
+{'client_metrics': '{"train_loss": 2.073248482667483}'}
+{'client_metrics': '{"train_loss": 2.4581913898388543}'}
+{'client_metrics': '{"train_loss": 2.2534991623833776}'}
+INFO :      fit progress: (3, 0.8315339013934135, {'Centralized_accuracy': 0.60859375}, 44.061098650000076)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 4]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 2.536367557477206}'}
-{'client_metrics': '{"train_loss": 2.393044243638332}'}
-{'client_metrics': '{"train_loss": 2.6771629626552262}'}
-INFO :      fit progress: (4, 0.9424965754151344, {'Centralized_accuracy': 0.52890625}, 56.89358685000025)
+{'client_metrics': '{"train_loss": 1.7491460150728624}'}
+{'client_metrics': '{"train_loss": 1.9250495824962854}'}
+{'client_metrics': '{"train_loss": 2.078729283351165}'}
+INFO :      fit progress: (4, 0.7969653680920601, {'Centralized_accuracy': 0.6375}, 56.99220473000014)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 5]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 2.4170600852141013}'}
-{'client_metrics': '{"train_loss": 2.201364486012608}'}
-{'client_metrics': '{"train_loss": 2.502638456367311}'}
-INFO :      fit progress: (5, 0.8488689929246902, {'Centralized_accuracy': 0.59453125}, 68.72506076700029)
+{'client_metrics': '{"train_loss": 1.3941616309949985}'}
+{'client_metrics': '{"train_loss": 1.3758448233129457}'}
+{'client_metrics': '{"train_loss": 1.3151648192045589}'}
+INFO :      fit progress: (5, 0.7697613403201103, {'Centralized_accuracy': 0.69453125}, 70.64516394200018)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 6]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 1.9155493186165888}'}
-{'client_metrics': '{"train_loss": 1.9672936144329252}'}
-{'client_metrics': '{"train_loss": 1.658360086954557}'}
-INFO :      fit progress: (6, 0.8334634110331536, {'Centralized_accuracy': 0.63125}, 83.4964257770007)
+{'client_metrics': '{"train_loss": 1.6670739635040885}'}
+{'client_metrics': '{"train_loss": 0.7598387772086426}'}
+{'client_metrics': '{"train_loss": 1.5510045148077465}'}
+INFO :      fit progress: (6, 0.7045170828700066, {'Centralized_accuracy': 0.7359375}, 82.1129555120001)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 7]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 1.3831494358212997}'}
-{'client_metrics': '{"train_loss": 1.1342762614098878}'}
-{'client_metrics': '{"train_loss": 1.883242934157974}'}
-INFO :      fit progress: (7, 0.9060284212231636, {'Centralized_accuracy': 0.6515625}, 97.61464964700008)
+{'client_metrics': '{"train_loss": 0.7091738249485692}'}
+{'client_metrics': '{"train_loss": 1.2360616721785986}'}
+{'client_metrics': '{"train_loss": 0.7402328570158436}'}
+INFO :      fit progress: (7, 0.7893824949860573, {'Centralized_accuracy': 0.7546875}, 97.59550247300012)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 8]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.8370324112474918}'}
-{'client_metrics': '{"train_loss": 1.5766057372966316}'}
-{'client_metrics': '{"train_loss": 0.7096327473051273}'}
-INFO :      fit progress: (8, 0.9378336556255817, {'Centralized_accuracy': 0.6859375}, 109.94058841800052)
+{'client_metrics': '{"train_loss": 0.4885995062605406}'}
+{'client_metrics': '{"train_loss": 0.39020028110765753}'}
+{'client_metrics': '{"train_loss": 1.208639525231861}'}
+INFO :      fit progress: (8, 0.8472811043262481, {'Centralized_accuracy': 0.7671875}, 112.18699163700012)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 9]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 1.425112967689832}'}
-{'client_metrics': '{"train_loss": 1.478313478200059}'}
-{'client_metrics': '{"train_loss": 1.6799869514428651}'}
-INFO :      fit progress: (9, 0.6993855498731136, {'Centralized_accuracy': 0.71484375}, 122.33091176000016)
+{'client_metrics': '{"train_loss": 0.9558946312172338}'}
+{'client_metrics': '{"train_loss": 0.3017102162031314}'}
+{'client_metrics': '{"train_loss": 0.7264357913462889}'}
+INFO :      fit progress: (9, 0.8018198266625405, {'Centralized_accuracy': 0.78984375}, 124.83117994300028)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 10]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.4865264816281314}'}
-{'client_metrics': '{"train_loss": 0.9921989630451068}'}
-{'client_metrics': '{"train_loss": 0.8275595660088584}'}
-INFO :      fit progress: (10, 0.8751320451498031, {'Centralized_accuracy': 0.73125}, 135.27611376300047)
+{'client_metrics': '{"train_loss": 1.039417757603683}'}
+{'client_metrics': '{"train_loss": 0.5321446867171853}'}
+{'client_metrics': '{"train_loss": 0.35727858141763136}'}
+INFO :      fit progress: (10, 0.815049833804369, {'Centralized_accuracy': 0.80546875}, 137.73469248799984)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 11]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.8831066143299852}'}
-{'client_metrics': '{"train_loss": 0.6004702535171348}'}
-{'client_metrics': '{"train_loss": 0.6896462317963596}'}
-INFO :      fit progress: (11, 0.7944811098277569, {'Centralized_accuracy': 0.7546875}, 147.2516758110005)
+{'client_metrics': '{"train_loss": 0.7416937185059252}'}
+{'client_metrics': '{"train_loss": 0.35422541297295884}'}
+{'client_metrics': '{"train_loss": 0.6310763772910377}'}
+INFO :      fit progress: (11, 0.7225804157555104, {'Centralized_accuracy': 0.81015625}, 149.10996076599986)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 12]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.9982614127608637}'}
-{'client_metrics': '{"train_loss": 0.9708469231661997}'}
-{'client_metrics': '{"train_loss": 0.5659598478426536}'}
-INFO :      fit progress: (12, 0.664354246482253, {'Centralized_accuracy': 0.78359375}, 160.0709108330002)
+{'client_metrics': '{"train_loss": 0.28181581995228216}'}
+{'client_metrics': '{"train_loss": 0.4065998176592984}'}
+{'client_metrics': '{"train_loss": 0.3596730397742552}'}
+INFO :      fit progress: (12, 0.7941680692136288, {'Centralized_accuracy': 0.81328125}, 161.59682633600005)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 13]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.5268068745589027}'}
-{'client_metrics': '{"train_loss": 0.5326346753475567}'}
-{'client_metrics': '{"train_loss": 0.6388899548175303}'}
-INFO :      fit progress: (13, 0.7671565800905228, {'Centralized_accuracy': 0.75859375}, 173.48791199700008)
+{'client_metrics': '{"train_loss": 0.34679571320660985}'}
+{'client_metrics': '{"train_loss": 0.6631709233686132}'}
+{'client_metrics': '{"train_loss": 0.2571390859836053}'}
+INFO :      fit progress: (13, 0.9843403909355402, {'Centralized_accuracy': 0.8078125}, 175.98138776799988)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 14]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.5805475342876889}'}
-{'client_metrics': '{"train_loss": 0.4669094055915545}'}
-{'client_metrics': '{"train_loss": 0.5970764341405951}'}
-INFO :      fit progress: (14, 0.786585909128189, {'Centralized_accuracy': 0.7765625}, 184.8160554570004)
+{'client_metrics': '{"train_loss": 0.2832100400812037}'}
+{'client_metrics': '{"train_loss": 0.7581868263033147}'}
+{'client_metrics': '{"train_loss": 0.12218495596607681}'}
+INFO :      fit progress: (14, 0.7425735627301038, {'Centralized_accuracy': 0.8265625}, 191.09456184600003)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 15]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.31906045265005606}'}
-{'client_metrics': '{"train_loss": 0.6739900874745217}'}
-{'client_metrics': '{"train_loss": 0.37193191276702026}'}
-INFO :      fit progress: (15, 0.8406387746334076, {'Centralized_accuracy': 0.7796875}, 196.3926318290005)
+{'client_metrics': '{"train_loss": 0.516794055994404}'}
+{'client_metrics': '{"train_loss": 0.5226636252079445}'}
+{'client_metrics': '{"train_loss": 0.2637748877168633}'}
+INFO :      fit progress: (15, 0.825347013026476, {'Centralized_accuracy': 0.8140625}, 205.0129310020002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 16]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.3575549676315859}'}
-{'client_metrics': '{"train_loss": 0.21024913780498677}'}
-{'client_metrics': '{"train_loss": 0.10631005931421757}'}
-INFO :      fit progress: (16, 0.789684321731329, {'Centralized_accuracy': 0.81328125}, 211.53861291200064)
+{'client_metrics': '{"train_loss": 0.24305633238760666}'}
+{'client_metrics': '{"train_loss": 0.40761629329063}'}
+{'client_metrics': '{"train_loss": 0.27128433111417843}'}
+INFO :      fit progress: (16, 0.8123604523483664, {'Centralized_accuracy': 0.86015625}, 216.28427418699994)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 17]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.12242016936383712}'}
-{'client_metrics': '{"train_loss": 0.40868267851571244}'}
-{'client_metrics': '{"train_loss": 0.24102823969451492}'}
-INFO :      fit progress: (17, 0.8169384956359863, {'Centralized_accuracy': 0.81796875}, 225.81474475800042)
+{'client_metrics': '{"train_loss": 0.12233010579151787}'}
+{'client_metrics': '{"train_loss": 0.045853590728730374}'}
+{'client_metrics': '{"train_loss": 0.2527617644115638}'}
+INFO :      fit progress: (17, 1.0943093701032922, {'Centralized_accuracy': 0.8515625}, 229.99997312300002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 18]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.23599853290397732}'}
-{'client_metrics': '{"train_loss": 0.08995209981423194}'}
-{'client_metrics': '{"train_loss": 0.1965512835365524}'}
-INFO :      fit progress: (18, 0.9793425016105175, {'Centralized_accuracy': 0.80546875}, 237.13800424700003)
+{'client_metrics': '{"train_loss": 0.11403137156986094}'}
+{'client_metrics': '{"train_loss": 0.16201650543595092}'}
+{'client_metrics': '{"train_loss": 0.0315204475126194}'}
+INFO :      fit progress: (18, 1.1260841600596905, {'Centralized_accuracy': 0.84765625}, 245.42053961800002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 19]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.1351012797990384}'}
-{'client_metrics': '{"train_loss": 0.18370184875686846}'}
-{'client_metrics': '{"train_loss": 0.1197393354714701}'}
-INFO :      fit progress: (19, 0.8451365739107132, {'Centralized_accuracy': 0.81640625}, 248.7920781520006)
+{'client_metrics': '{"train_loss": 0.2158973155476685}'}
+{'client_metrics': '{"train_loss": 0.10753502087810865}'}
+{'client_metrics': '{"train_loss": 0.11707926951777681}'}
+INFO :      fit progress: (19, 1.0553687535692007, {'Centralized_accuracy': 0.87109375}, 259.315811982)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 20]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.12834593714337403}'}
-{'client_metrics': '{"train_loss": 0.33945768106994884}'}
-{'client_metrics': '{"train_loss": 0.05364478265024585}'}
-INFO :      fit progress: (20, 0.8464291457086801, {'Centralized_accuracy': 0.82109375}, 261.4799638300001)
+{'client_metrics': '{"train_loss": 0.10045171102096144}'}
+{'client_metrics': '{"train_loss": 0.10702416661124996}'}
+{'client_metrics': '{"train_loss": 0.13368601717783826}'}
+INFO :      fit progress: (20, 1.0445670690387487, {'Centralized_accuracy': 0.8625}, 272.44693228899996)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 21]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.22814410400314955}'}
-{'client_metrics': '{"train_loss": 0.19396616153001864}'}
-{'client_metrics': '{"train_loss": 0.06240154827929263}'}
-INFO :      fit progress: (21, 0.943484603241086, {'Centralized_accuracy': 0.82890625}, 274.3803080430007)
+{'client_metrics': '{"train_loss": 0.13923482261158754}'}
+{'client_metrics': '{"train_loss": 0.1035241864372342}'}
+{'client_metrics': '{"train_loss": 0.052308866676564016}'}
+INFO :      fit progress: (21, 1.0018962399917655, {'Centralized_accuracy': 0.86796875}, 285.3599186900001)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 22]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.05030341013969064}'}
-{'client_metrics': '{"train_loss": 0.11375147625398085}'}
-{'client_metrics': '{"train_loss": 0.098056250661522}'}
-INFO :      fit progress: (22, 1.0504952508956193, {'Centralized_accuracy': 0.81796875}, 287.3524302880005)
+{'client_metrics': '{"train_loss": 0.12785647538615963}'}
+{'client_metrics': '{"train_loss": 0.09916544177413973}'}
+{'client_metrics': '{"train_loss": 0.1819790795595439}'}
+INFO :      fit progress: (22, 1.060996827832423, {'Centralized_accuracy': 0.86328125}, 299.5356500470002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 23]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.10929316354668117}'}
-{'client_metrics': '{"train_loss": 0.34985187997864114}'}
-{'client_metrics': '{"train_loss": 0.19703018204745604}'}
-INFO :      fit progress: (23, 0.8136649690568447, {'Centralized_accuracy': 0.834375}, 299.425267945001)
+{'client_metrics': '{"train_loss": 0.049235277576232105}'}
+{'client_metrics': '{"train_loss": 0.05124151509768299}'}
+{'client_metrics': '{"train_loss": 0.49189958208262397}'}
+INFO :      fit progress: (23, 1.2067936415784062, {'Centralized_accuracy': 0.8640625}, 311.66056561100004)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 24]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.11109124506688922}'}
-{'client_metrics': '{"train_loss": 0.08210190786653235}'}
-{'client_metrics': '{"train_loss": 0.1450550991936498}'}
-INFO :      fit progress: (24, 0.906067555397749, {'Centralized_accuracy': 0.83359375}, 313.36582949900094)
+{'client_metrics': '{"train_loss": 0.09210964260917255}'}
+{'client_metrics': '{"train_loss": 0.1784575181297896}'}
+{'client_metrics': '{"train_loss": 0.16345228930118824}'}
+INFO :      fit progress: (24, 1.1159798518754542, {'Centralized_accuracy': 0.8640625}, 323.47297940499993)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 25]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.06358054660379892}'}
-{'client_metrics': '{"train_loss": 0.12349991710537947}'}
-{'client_metrics': '{"train_loss": 0.07240556795883234}'}
-INFO :      fit progress: (25, 0.9641495909541845, {'Centralized_accuracy': 0.8328125}, 327.4550805680001)
+{'client_metrics': '{"train_loss": 0.085711172579697}'}
+{'client_metrics': '{"train_loss": 0.18644263027886154}'}
+{'client_metrics': '{"train_loss": 0.0967558346039823}'}
+INFO :      fit progress: (25, 1.0299145731143653, {'Centralized_accuracy': 0.87578125}, 336.2906740540002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 26]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.09346353813695411}'}
-{'client_metrics': '{"train_loss": 0.004887247105299453}'}
-{'client_metrics': '{"train_loss": 0.06538395861934987}'}
-INFO :      fit progress: (26, 1.134190284088254, {'Centralized_accuracy': 0.83828125}, 339.70834715399997)
+{'client_metrics': '{"train_loss": 0.028719196865949925}'}
+{'client_metrics': '{"train_loss": 0.03938805074530344}'}
+{'client_metrics': '{"train_loss": 0.03111203087169656}'}
+INFO :      fit progress: (26, 1.4566498445346951, {'Centralized_accuracy': 0.875}, 349.53287833700006)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 27]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.0244757083676177}'}
-{'client_metrics': '{"train_loss": 0.03712600223350039}'}
-{'client_metrics': '{"train_loss": 0.013262759695023236}'}
-INFO :      fit progress: (27, 1.0868043795228004, {'Centralized_accuracy': 0.8375}, 351.5041643850009)
+{'client_metrics': '{"train_loss": 0.05302647164180165}'}
+{'client_metrics': '{"train_loss": 0.011643418124243419}'}
+{'client_metrics': '{"train_loss": 0.009069296736853527}'}
+INFO :      fit progress: (27, 1.2855215025600046, {'Centralized_accuracy': 0.88359375}, 362.0702053529999)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 28]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.07472208506002669}'}
-{'client_metrics': '{"train_loss": 0.019838113702592506}'}
-{'client_metrics': '{"train_loss": 0.016732925760295888}'}
-INFO :      fit progress: (28, 1.1212059311568736, {'Centralized_accuracy': 0.8484375}, 364.40762561000065)
+{'client_metrics': '{"train_loss": 0.005277840868194816}'}
+{'client_metrics': '{"train_loss": 0.002938841705463948}'}
+{'client_metrics': '{"train_loss": 0.005540350878482933}'}
+INFO :      fit progress: (28, 1.682837936282158, {'Centralized_accuracy': 0.87734375}, 376.39256372299997)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 29]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.026864077413847554}'}
-{'client_metrics': '{"train_loss": 0.0057423296730646075}'}
-{'client_metrics': '{"train_loss": 0.007705363135372815}'}
-INFO :      fit progress: (29, 1.3138184636831283, {'Centralized_accuracy': 0.834375}, 375.68835651500103)
+{'client_metrics': '{"train_loss": 0.05678348044992682}'}
+{'client_metrics': '{"train_loss": 0.005177555289431159}'}
+{'client_metrics': '{"train_loss": 0.03251386327638341}'}
+INFO :      fit progress: (29, 1.373832850944018, {'Centralized_accuracy': 0.8796875}, 389.2546947189999)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [ROUND 30]
 INFO :      configure_fit: strategy sampled 3 clients (out of 6)
 INFO :      aggregate_fit: received 3 results and 0 failures
-{'client_metrics': '{"train_loss": 0.05615269697197315}'}
-{'client_metrics': '{"train_loss": 0.007348821590644898}'}
-{'client_metrics': '{"train_loss": 0.0034326505537126085}'}
-INFO :      fit progress: (30, 1.2731413509696723, {'Centralized_accuracy': 0.84375}, 392.0087759799999)
+{'client_metrics': '{"train_loss": 0.010180897830975422}'}
+{'client_metrics': '{"train_loss": 0.003885689829693079}'}
+{'client_metrics': '{"train_loss": 0.0354705761413979}'}
+INFO :      fit progress: (30, 1.5234644027426838, {'Centralized_accuracy': 0.88203125}, 403.7262956620002)
 INFO :      configure_evaluate: strategy sampled 6 clients (out of 6)
 INFO :      aggregate_evaluate: received 6 results and 0 failures
 INFO :      
 INFO :      [SUMMARY]
-INFO :      Run finished 30 round(s) in 392.92s
+INFO :      Run finished 30 round(s) in 404.54s
 INFO :          History (loss, distributed):
-INFO :                  round 1: 1.1866788822003618
-INFO :                  round 2: 1.0075710434120455
-INFO :                  round 3: 0.9718951478643381
-INFO :                  round 4: 0.9416590702845771
-INFO :                  round 5: 0.8573094907547397
-INFO :                  round 6: 0.8404308288095778
-INFO :                  round 7: 0.8902617909364865
-INFO :                  round 8: 0.9218588999596787
-INFO :                  round 9: 0.683926237511273
-INFO :                  round 10: 0.8614158355188571
-INFO :                  round 11: 0.8194300549225666
-INFO :                  round 12: 0.6746934497705257
-INFO :                  round 13: 0.7154358190013972
-INFO :                  round 14: 0.7710838870165696
-INFO :                  round 15: 0.8601740998135662
-INFO :                  round 16: 0.819081803531566
-INFO :                  round 17: 0.8237349629212317
-INFO :                  round 18: 0.9196666806015749
-INFO :                  round 19: 0.8291357072019582
-INFO :                  round 20: 0.8472346904797634
-INFO :                  round 21: 0.9450093305452996
-INFO :                  round 22: 1.0307834153426598
-INFO :                  round 23: 0.7930612099867954
-INFO :                  round 24: 0.8664377619890423
-INFO :                  round 25: 0.9275454414267897
-INFO :                  round 26: 1.106491550817639
-INFO :                  round 27: 1.0866721962421602
-INFO :                  round 28: 1.0778921124581387
-INFO :                  round 29: 1.180410240076646
-INFO :                  round 30: 1.2280062034876824
+INFO :                  round 1: 1.1397288173387323
+INFO :                  round 2: 1.000339051919136
+INFO :                  round 3: 0.8268123029518635
+INFO :                  round 4: 0.7935967848410317
+INFO :                  round 5: 0.7840075839184667
+INFO :                  round 6: 0.7070321647947759
+INFO :                  round 7: 0.7966991181298709
+INFO :                  round 8: 0.9042689826246463
+INFO :                  round 9: 0.8420875506844017
+INFO :                  round 10: 0.8886913567567053
+INFO :                  round 11: 0.7263991292495863
+INFO :                  round 12: 0.852547455935976
+INFO :                  round 13: 0.983907889805898
+INFO :                  round 14: 0.8110426991441757
+INFO :                  round 15: 0.764036301203514
+INFO :                  round 16: 0.7838081346140603
+INFO :                  round 17: 0.8983888324287529
+INFO :                  round 18: 0.9981149246346471
+INFO :                  round 19: 0.9832050425613849
+INFO :                  round 20: 1.0382877018365961
+INFO :                  round 21: 0.9245344306296053
+INFO :                  round 22: 0.9241191412261621
+INFO :                  round 23: 1.1664257495218067
+INFO :                  round 24: 1.012641829821134
+INFO :                  round 25: 0.9520302236743196
+INFO :                  round 26: 1.2501401426568683
+INFO :                  round 27: 1.1176931328432476
+INFO :                  round 28: 1.38227567169779
+INFO :                  round 29: 1.2084320061337985
+INFO :                  round 30: 1.3393653259753349
 INFO :          History (loss, centralized):
-INFO :                  round 0: 2.3468955636024473
-INFO :                  round 1: 1.184280800819397
-INFO :                  round 2: 1.005135251581669
-INFO :                  round 3: 0.9699386522173882
-INFO :                  round 4: 0.9424965754151344
-INFO :                  round 5: 0.8488689929246902
-INFO :                  round 6: 0.8334634110331536
-INFO :                  round 7: 0.9060284212231636
-INFO :                  round 8: 0.9378336556255817
-INFO :                  round 9: 0.6993855498731136
-INFO :                  round 10: 0.8751320451498031
-INFO :                  round 11: 0.7944811098277569
-INFO :                  round 12: 0.664354246482253
-INFO :                  round 13: 0.7671565800905228
-INFO :                  round 14: 0.786585909128189
-INFO :                  round 15: 0.8406387746334076
-INFO :                  round 16: 0.789684321731329
-INFO :                  round 17: 0.8169384956359863
-INFO :                  round 18: 0.9793425016105175
-INFO :                  round 19: 0.8451365739107132
-INFO :                  round 20: 0.8464291457086801
-INFO :                  round 21: 0.943484603241086
-INFO :                  round 22: 1.0504952508956193
-INFO :                  round 23: 0.8136649690568447
-INFO :                  round 24: 0.906067555397749
-INFO :                  round 25: 0.9641495909541845
-INFO :                  round 26: 1.134190284088254
-INFO :                  round 27: 1.0868043795228004
-INFO :                  round 28: 1.1212059311568736
-INFO :                  round 29: 1.3138184636831283
-INFO :                  round 30: 1.2731413509696723
+INFO :                  round 0: 2.3367655694484712
+INFO :                  round 1: 1.128600251674652
+INFO :                  round 2: 0.9951771169900894
+INFO :                  round 3: 0.8315339013934135
+INFO :                  round 4: 0.7969653680920601
+INFO :                  round 5: 0.7697613403201103
+INFO :                  round 6: 0.7045170828700066
+INFO :                  round 7: 0.7893824949860573
+INFO :                  round 8: 0.8472811043262481
+INFO :                  round 9: 0.8018198266625405
+INFO :                  round 10: 0.815049833804369
+INFO :                  round 11: 0.7225804157555104
+INFO :                  round 12: 0.7941680692136288
+INFO :                  round 13: 0.9843403909355402
+INFO :                  round 14: 0.7425735627301038
+INFO :                  round 15: 0.825347013026476
+INFO :                  round 16: 0.8123604523483664
+INFO :                  round 17: 1.0943093701032922
+INFO :                  round 18: 1.1260841600596905
+INFO :                  round 19: 1.0553687535692007
+INFO :                  round 20: 1.0445670690387487
+INFO :                  round 21: 1.0018962399917655
+INFO :                  round 22: 1.060996827832423
+INFO :                  round 23: 1.2067936415784062
+INFO :                  round 24: 1.1159798518754542
+INFO :                  round 25: 1.0299145731143653
+INFO :                  round 26: 1.4566498445346951
+INFO :                  round 27: 1.2855215025600046
+INFO :                  round 28: 1.682837936282158
+INFO :                  round 29: 1.373832850944018
+INFO :                  round 30: 1.5234644027426838
 INFO :          History (metrics, distributed, evaluate):
-INFO :          {'accuracy': [(1, 0.3684210526315789),
-INFO :                        (2, 0.5233918128654971),
-INFO :                        (3, 0.5614035087719298),
-INFO :                        (4, 0.5389863547758285),
-INFO :                        (5, 0.6062378167641326),
-INFO :                        (6, 0.6413255360623782),
-INFO :                        (7, 0.6500974658869396),
-INFO :                        (8, 0.6978557504873294),
-INFO :                        (9, 0.7115009746588694),
-INFO :                        (10, 0.7183235867446394),
-INFO :                        (11, 0.7241715399610137),
-INFO :                        (12, 0.7543859649122807),
-INFO :                        (13, 0.7631578947368421),
-INFO :                        (14, 0.7573099415204678),
-INFO :                        (15, 0.7524366471734892),
-INFO :                        (16, 0.7855750487329435),
-INFO :                        (17, 0.8089668615984406),
-INFO :                        (18, 0.8089668615984406),
-INFO :                        (19, 0.804093567251462),
-INFO :                        (20, 0.8109161793372319),
-INFO :                        (21, 0.817738791423002),
-INFO :                        (22, 0.8060428849902534),
-INFO :                        (23, 0.8167641325536062),
-INFO :                        (24, 0.8304093567251462),
-INFO :                        (25, 0.8226120857699805),
-INFO :                        (26, 0.8284600389863548),
-INFO :                        (27, 0.8255360623781677),
-INFO :                        (28, 0.8401559454191033),
-INFO :                        (29, 0.8245614035087719),
-INFO :                        (30, 0.8294346978557505)]}
+INFO :          {'accuracy': [(1, 0.47855750487329435),
+INFO :                        (2, 0.48050682261208577),
+INFO :                        (3, 0.5964912280701754),
+INFO :                        (4, 0.6569200779727096),
+INFO :                        (5, 0.695906432748538),
+INFO :                        (6, 0.7504873294346979),
+INFO :                        (7, 0.7543859649122807),
+INFO :                        (8, 0.7690058479532164),
+INFO :                        (9, 0.7855750487329435),
+INFO :                        (10, 0.8138401559454191),
+INFO :                        (11, 0.8216374269005848),
+INFO :                        (12, 0.8138401559454191),
+INFO :                        (13, 0.8138401559454191),
+INFO :                        (14, 0.8401559454191033),
+INFO :                        (15, 0.8382066276803118),
+INFO :                        (16, 0.8645224171539961),
+INFO :                        (17, 0.8703703703703703),
+INFO :                        (18, 0.8742690058479532),
+INFO :                        (19, 0.8693957115009746),
+INFO :                        (20, 0.8606237816764133),
+INFO :                        (21, 0.8791423001949318),
+INFO :                        (22, 0.8810916179337231),
+INFO :                        (23, 0.8674463937621832),
+INFO :                        (24, 0.8898635477582846),
+INFO :                        (25, 0.8918128654970761),
+INFO :                        (26, 0.884990253411306),
+INFO :                        (27, 0.8957115009746589),
+INFO :                        (28, 0.8927875243664717),
+INFO :                        (29, 0.8996101364522417),
+INFO :                        (30, 0.8966861598440545)]}
 INFO :          History (metrics, centralized):
 INFO :          {'Centralized_accuracy': [(0, 0.0),
-INFO :                                    (1, 0.35859375),
-INFO :                                    (2, 0.5296875),
-INFO :                                    (3, 0.55),
-INFO :                                    (4, 0.52890625),
-INFO :                                    (5, 0.59453125),
-INFO :                                    (6, 0.63125),
-INFO :                                    (7, 0.6515625),
-INFO :                                    (8, 0.6859375),
-INFO :                                    (9, 0.71484375),
-INFO :                                    (10, 0.73125),
-INFO :                                    (11, 0.7546875),
-INFO :                                    (12, 0.78359375),
-INFO :                                    (13, 0.75859375),
-INFO :                                    (14, 0.7765625),
-INFO :                                    (15, 0.7796875),
-INFO :                                    (16, 0.81328125),
-INFO :                                    (17, 0.81796875),
-INFO :                                    (18, 0.80546875),
-INFO :                                    (19, 0.81640625),
-INFO :                                    (20, 0.82109375),
-INFO :                                    (21, 0.82890625),
-INFO :                                    (22, 0.81796875),
-INFO :                                    (23, 0.834375),
-INFO :                                    (24, 0.83359375),
-INFO :                                    (25, 0.8328125),
-INFO :                                    (26, 0.83828125),
-INFO :                                    (27, 0.8375),
-INFO :                                    (28, 0.8484375),
-INFO :                                    (29, 0.834375),
-INFO :                                    (30, 0.84375)]}
-INFO :      
-(ClientAppActor pid=11294) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/flwr_datasets/utils.py:109: UserWarning: The currently tested dataset are ['mnist', 'ylecun/mnist', 'cifar10', 'uoft-cs/cifar10', 'fashion_mnist', 'zalando-datasets/fashion_mnist', 'sasha/dog-food', 'zh-plus/tiny-imagenet', 'scikit-learn/adult-census-income', 'cifar100', 'uoft-cs/cifar100', 'svhn', 'ufldl-stanford/svhn', 'sentiment140', 'stanfordnlp/sentiment140', 'speech_commands', 'LIUM/tedlium', 'flwrlabs/femnist', 'flwrlabs/ucf101', 'flwrlabs/ambient-acoustic-context', 'jlh/uci-mushrooms', 'Mike0307/MNIST-M', 'flwrlabs/usps', 'scikit-learn/iris', 'flwrlabs/pacs', 'flwrlabs/cinic10', 'flwrlabs/caltech101', 'flwrlabs/office-home', 'flwrlabs/fed-isic2019']. Given: Falah/Alzheimer_MRI.
-(ClientAppActor pid=11294)   warnings.warn(
-(ClientAppActor pid=11295) /home/cupcake/Desktop/Tesi01/venv/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
-(ClientAppActor pid=11295)   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+INFO :                                    (1, 0.4953125),
+INFO :                                    (2, 0.4953125),
+INFO :                                    (3, 0.60859375),
+INFO :                                    (4, 0.6375),
+INFO :                                    (5, 0.69453125),
+INFO :                                    (6, 0.7359375),
+INFO :                                    (7, 0.7546875),
+INFO :                                    (8, 0.7671875),
+INFO :                                    (9, 0.78984375),
+INFO :                                    (10, 0.80546875),
+INFO :                                    (11, 0.81015625),
+INFO :                                    (12, 0.81328125),
+INFO :                                    (13, 0.8078125),
+INFO :                                    (14, 0.8265625),
+INFO :                                    (15, 0.8140625),
+INFO :                                    (16, 0.86015625),
+INFO :                                    (17, 0.8515625),
+INFO :                                    (18, 0.84765625),
+INFO :                                    (19, 0.87109375),
+INFO :                                    (20, 0.8625),
+INFO :                                    (21, 0.86796875),
+INFO :                                    (22, 0.86328125),
+INFO :                                    (23, 0.8640625),
+INFO :                                    (24, 0.8640625),
+INFO :                                    (25, 0.87578125),
+INFO :                                    (26, 0.875),
+INFO :                                    (27, 0.88359375),
