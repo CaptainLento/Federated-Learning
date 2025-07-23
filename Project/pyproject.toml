@@ -1,8 +1,12 @@
+# file di configurazione pyproject.toml
 
+# strumenti necessari per costruire il pacchetto Python del progetto (ecosistema di Hatch)
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+# metadati del progetto Python (nome, versione, descrizione e licenza)
+# elenco dipendenze del progetto, librerie Python devono essere installate
 [project]
 name = "project01"
 version = "1.0.0"
@@ -15,23 +19,32 @@ dependencies = [
     "torchvision==0.20.1",
 ]
 
+# tutti i moduli Python e i pacchetti trovati nella directory del progetto (.) 
+# devono essere inclusi nel pacchetto wheel.
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 
+# campo opzionale per identificare l'autore
 [tool.flwr.app]
 publisher = "Cupcake"
 
+# componenti principali dell'applicazione Flower e loro allocazione
 [tool.flwr.app.components]
 serverapp = "project01.server_app:app"
 clientapp = "project01.client_app:app"
 
+# configurazioni per il comportamento del apprendimento federato.
+# numround, frazione client attivati ad ogni round, numepoche
 [tool.flwr.app.config]
 num-server-rounds = 30
 fraction-fit = 0.5
 local-epochs = 3
 
+# Ambienti di esecuzione.
 [tool.flwr.federations]
 default = "local-simulation"
 
+# dettagli specifici per la local-simulation
+# numero di client simulat
 [tool.flwr.federations.local-simulation]
 options.num-supernodes = 6
