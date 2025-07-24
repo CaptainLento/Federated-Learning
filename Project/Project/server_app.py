@@ -41,7 +41,6 @@ def handle_fit_metrics(metrics: List[Tuple[int, Metrics]]) -> Metrics:
     # `metrics` è una lista di tuple, dove ogni tupla contiene (numero_di_esempi, metriche_del_client).
     for _, m in metrics:
         print(m) # Stampa le metriche di ogni client.
-
     return {} # Restituisce un dizionario vuoto o aggregato se necessario.
 
 
@@ -87,7 +86,7 @@ def server_fn(context: Context):
     parameters = ndarrays_to_parameters(ndarrays) # Converte i pesi nel formato richiesto da Flower.
     
     # Carica il dataset di test globale per la valutazione centralizzata del modello.
-    # Questo dataset non è usato per l'addestramento federato, ma per monitorare le prestazioni del modello globale.
+    # Questo dataset usato per monitorare le prestazioni del modello globale.
     testset = load_dataset("Falah/Alzheimer_MRI")["test"] 
     testloader = DataLoader(testset.with_transform(get_transforms()), batch_size=32) # Crea un dataloader.
 
