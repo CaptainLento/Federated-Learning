@@ -12,6 +12,12 @@ name = "project01"
 version = "1.0.0"
 description = ""
 license = "Apache-2.0"
+
+# Dipendenze del progetto:
+# - flwr[simulation]: Il framework Flower per l'apprendimento federato.
+# - flwr-datasets[vision]: gestione di dataset federati per dati visivi.
+# - torch: libreria PyTorch per il deep learning.
+# - torchvision: Libreria PyTorch che fornisce dataset, architetture di modelli e trasformazioni di immagini comuni.
 dependencies = [
     "flwr[simulation]>=1.19.0",
     "flwr-datasets[vision]>=0.5.0",
@@ -19,8 +25,7 @@ dependencies = [
     "torchvision==0.20.1",
 ]
 
-# tutti i moduli Python e i pacchetti trovati nella directory del progetto (.) 
-# devono essere inclusi nel pacchetto wheel.
+# tutti i moduli Python e i pacchetti trovati nella directory del progetto (.) devono essere inclusi nel pacchetto wheel.
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 
@@ -29,12 +34,16 @@ packages = ["."]
 publisher = "Cupcake"
 
 # componenti principali dell'applicazione Flower e loro allocazione
+# serverapp: Definisce il punto di ingresso dell'applicazione server. Viene chiamato all'avvio del server Flower.
+# clientapp: Definisce il punto di ingresso dell'applicazione client. Viene chiamato quando un client Flower viene avviato e si connette al server.
 [tool.flwr.app.components]
 serverapp = "project01.server_app:app"
 clientapp = "project01.client_app:app"
 
 # configurazioni per il comportamento del apprendimento federato.
-# numround, frazione client attivati ad ogni round, numepoche
+# num-server-rounds: Il numero totale di round di federazione.
+# fraction-fit: La frazione di client disponibili che verranno selezionati per partecipare a ciascun round
+# local-epochs: Il numero di epoche locali che ciascun client eseguirà sui propri dati prima di inviare gli aggiornamenti
 [tool.flwr.app.config]
 num-server-rounds = 30
 fraction-fit = 0.5
@@ -45,6 +54,6 @@ local-epochs = 3
 default = "local-simulation"
 
 # dettagli specifici per la local-simulation
-# numero di client simulat
+# numero di client simulati
 [tool.flwr.federations.local-simulation]
 options.num-supernodes = 6
